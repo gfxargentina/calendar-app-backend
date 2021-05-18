@@ -16,13 +16,10 @@ const app = express();
 app.use( express.static('public') );
 
 
-//Rutas
-// app.get('/', (req, res) => {
-//     //console.log('Se requiere la ruta /');
-//     res.json({
-//         ok: true
-//     })
-// })
+//Rutas (middlewares)
+app.use('/api/auth', require('./routes/auth'));
+
+
 
 
 
