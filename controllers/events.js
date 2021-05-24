@@ -10,7 +10,7 @@ const getEventos= ( req, res = response ) => {
 const crearEvento= ( req, res = response ) => {
 
     //verificar que el evento llega
-    console.log( req.body)
+    //console.log( req.body)
 
     res.json({
         ok: true,
